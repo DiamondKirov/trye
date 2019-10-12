@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    
+    <script src="js/ajax.js"></script>
+    <script src="js/popup.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper row">
+                <div class="header__img-wrapper col-4">
+                    <img src="img/temino.svg" alt="icon" class="header__img ">
+                </div>
+                <div class="header__phone col-sm-4">
+                    <a href="tel:+79999999999" class="header__phone-btn">+7(999)999-99-99</a>
+                </div>
+                <div class="header__call col-sm-4">
+                    <button class="header__call-btn btn btn-primary">Обратный звонок</button>
+                </div>
+              
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="product">
+            <div class="container">
+                <div  itemscope itemtype="http://schema.org/Product" class="product__wrapper row">
+                    <div class="product__name col-md-6">
+                        <h1 itemprop="name" class="product__title">Профессиональный автоклав Союз</h1>
+                        <p temprop="description" class="product__discription">Готовьте домашние консервы у себя дома!</p>
+                        <img itemprop="image" src="img/fon.jpg" class="product__img" alt="">
+                    </div>
+                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product__price-info col-md-6">
+                        <h1 class="product__choose-tittle">Выберите литраж:</h1>
+                        <div class="product__volumes">
+                            <button class="product__volume product__volume--active" data-test="7990">20Л</button>
+                            <button  class="product__volume" data-test="9990">26Л</button>
+                        </div>
+                        <p itemprop="price" class="product__price">7990 <span itemprop="priceCurrency"> р.</span>   </p> 
+                        <form class="product__form form" method="POST" action="">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter email">
+                                <small id="form__name" class="form-text form__error">Имя содержит меньше двух символов</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="text" class="form-control" id="phone"  placeholder="Enter phone">
+                                <small id="form__phone" class="form-text form__error ">Телефон записан не верно</small>
+                            </div>
+                            <input type="submit"  class="form__send btn btn-success" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div class="popup">
+        <div class="popup-content">
+            <img src="img/cancel.svg" alt="" class="popup-close">
+            <img src="img/fon.jpg" alt="" class="popup-img">
+        </div>
+    
+    </div>
+</body>
+</html>
