@@ -13,7 +13,7 @@
     
     <script src="js/ajax.js"></script>
     <script src="js/popup.js"></script>
-    <title>Document</title>
+    <title>>Профессиональный автоклав Союз</title>
 </head>
 <body>
     <header class="header">
@@ -33,7 +33,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <article class="product">
             <div class="container">
@@ -49,7 +48,11 @@
                             <button class="product__volume product__volume--active" data-test="7990">20Л</button>
                             <button  class="product__volume" data-test="9990">26Л</button>
                         </div>
-                        <p itemprop="price" class="product__price">7990 <span itemprop="priceCurrency"> р.</span>   </p> 
+                        <div class="d-flex">
+                            <p itemprop="price" class="product__price">7990 </p> 
+                            <span itemprop="priceCurrency"> р.</span>
+                        </div>
+                        
                         <form class="product__form form" method="POST" action="">
                             <div class="form-group">
                                 <label for="name">Имя</label>
@@ -68,7 +71,6 @@
             </div>
         </article>
     </main>
-
     <div class="popup">
         <div class="popup-content">
             <img src="img/cancel.svg" alt="" class="popup-close">
@@ -76,18 +78,5 @@
         </div>
     
     </div>
-    <script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Product",
-  "name" : "Профессиональный автоклав Союз",
-  "image" : "https://diamondkirov.github.io/trye/img/fon.jpg",
-  "description" : "Готовьте домашние консервы у себя дома!",
-  "offers" : {
-    "@type" : "Offer",
-    "price" : "7990 р."
-  }
-}
-</script>
 </body>
 </html>
